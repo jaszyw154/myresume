@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #101327;
+    color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+nav {
+    font-size: 1.25rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 15%; /* Moves name in from the left */
+    background-color: #0b111e; /* Matches the body exactly */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.animate-character {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #00adb5 0%,   /* Your Cyan */
+        #ffffff 25%,  /* White */
+        #00adb5 50%,  /* Cyan */
+        #ffffff 75%,  /* White */
+        #00adb5 100%  /* Cyan */
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: textclip 3s linear infinite;
+    font-weight: 800;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00adb5;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li { margin-left: 20px; }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav ul li a:hover { color: #00adb5; }
+
+section { padding: 4rem 10%; }
+
+#hero {
+    text-align: center;
+    padding: 100px 10%;
+    /* We change the old gradient to match the new blue */
+    background: linear-gradient(180deg, #0b111e 0%, #141c2f 100%);
+}
+.profile-img {
+    width: 250px;       /* Increased from 180px */
+    height: 250px;      /* Increased from 180px */
+    border-radius: 50%; /* Keeps it circular */
+    border: 5px solid #00adb5; /* Slightly thicker border for balance */
+    object-fit: cover; /* Ensures the photo doesn't stretch */
+    margin-bottom: 25px; /* Added more space below the photo */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5); /* Stronger shadow for the larger image */
+    transition: transform 0.3s ease; /* Smooth transition when hovering */
+}
+
+.aboutme{
+font-size: 1.5rem;
+}
+
+/* Subtle effect when you hover over your photo */
+.profile-img:hover {
+    transform: scale(1.03); /* Lifts the photo slightly */
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #00adb5;
+    color: #121212;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #007c82;
+    transform: scale(1.05);
+}
+
+h2 {
+    border-bottom: 3px solid #00adb5;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+h3 { color: #00adb5; margin-bottom: 10px; }
+
+/* Restored Hover Effect for Technical Skills */
+.skill-list span {
+    background: #222;
+    border: 1px solid #333;
+    color: #eeeeee;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition for the hover */
+}
+
+.skill-list span:hover {
+    background: #00adb5;   /* The cyan color */
+    color: #121212;        /* Dark text for contrast */
+    border-color: #00adb5;
+    transform: translateY(-3px); /* Lifts the skill up slightly */
+    box-shadow: 0 4px 10px rgba(0, 173, 181, 0.3); /* Adds a subtle glow */
+    cursor: default;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #1f1f1f;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #00adb5;
+    transform: translateY(-5px);
+}
+
+.experience-item { cursor: pointer; border-left: 4px solid #00adb5; }
+.click-hint { font-size: 0.8rem; color: #00adb5; display: block; margin-top: 10px; }
+
+.project-links { margin-top: 15px; }
+.project-links a {
+    color: #00adb5;
+    text-decoration: none;
+    border: 1px solid #00adb5;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 80px;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 75vh;
+    border-radius: 10px;
+}
+#caption { text-align: center; color: #ccc; padding: 15px; }
+.close {
+    position: absolute; top: 30px; right: 35px;
+    color: #fff; font-size: 40px; cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 4rem;
+    background: #1f1f1f;
+}
+
+.socials a {
+    color: #00adb5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+/* Style for Navigation Buttons in Gallery */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0, 173, 181, 0.3);
+    border: none;
+}
+
+.next { right: 5%; }
+.prev { left: 5%; }
+
+.prev:hover, .next:hover {
+    background-color: #00adb5;
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}

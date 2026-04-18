@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasleen Kaur Walia | Portfolio</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="animate-character">Jasleen Kaur Walia</span>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="me .jpg" alt="Jasleen's Photo" class="profile-img">
+        <h1>Hi, I'm <span class="animate-character">Jasleen Kaur Walia</span></h1>
+        <p>Computer Science Student | Tech Lead | Event Manager</p>
+        <div class="hero-btns">
+            <a href="https://www.linkedin.com/in/jasleen-kwalia154" target="_blank" class="btn-primary">Connect on LinkedIn</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="aboutme">
+            <p>Hii, I am a second-year B.Tech Computer Science Engineering student with a keen interest in programming, software development, and problem-solving. I am building a strong foundation in languages such as C and Java while continuously improving my understanding of data structures and core computer science concepts.</p>
+            <p>I enjoy learning new technologies, working on practical projects, and challenging myself to grow both technically and professionally. Currently seeking opportunities for internships, projects, or collaborations that allow me to apply my skills and gain industry exposure.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Expertise</h2>
+        <h3>Languages</h3>
+        <div class="skill-list">
+            <span>C++</span><span>C</span><span>Java</span><span>Python</span>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <h3>Subjects & Fundamentals</h3>
+        <div class="skill-list">
+            <span>DSA</span><span>Operating Systems</span><span>Software Engineering</span><span>Basic IoT</span>
+        </div>
+        <h3>Tools & Platforms</h3>
+        <div class="skill-list">
+            <span>Git</span><span>GitHub</span><span>Canva</span><span>AI Tools (ChatGPT, Prompt Engineering)</span><span>Google Colab</span><span>Vs code</span>
+        </div>
+        <div class="skill-list">
+        <h3>Exploring Technologies</h3>
+        <span>React.js</span><span>Node.js</span>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Life & Experiences</h2>
+        <div class="project-grid">
+            <div class="project-card experience-item" onclick="openGallery(['texplore.jpg'], 'Texplore Management Coordinator')">
+                <h3>Texplore Club</h3>
+                <p><strong>Management Coordinator (2024 - Present)</strong></p>
+                <p>Joined as a member in 2024 and promoted to Coordinator in 2025. Currently leading a team of 15-20 members to manage and execute various technical events.</p>
+                <span class="click-hint">Click for gallery</span>
+            </div>
+
+            <div class="project-card experience-item" onclick="openGallery(['AISUMBMIT1.jpg', 'AISUBMIT2.jpg'], 'AI Summit 2026')">
+                <h3>AI Summit 2026 (IEEE x Amity)</h3>
+                <p><strong>Event Management Coordinator</strong></p>
+                <p>Managed 500+ students and a 20-member team covering backstage, front-stage, and photography.</p>
+                <span class="click-hint">Click for gallery</span>
+            </div>
+
+            <div class="project-card experience-item" onclick="openGallery(['technovation1.jpg','technovation2.jpg','technovation3.jpg'], 'Amiphoria Core Team')">
+                <h3>Amiphoria Technovation</h3>
+                <p><strong>Core Team Member</strong></p>
+                <p>Led a team of 15-20 members for a multi-university tech showcase project competition.</p>
+                <span class="click-hint">Click for proof</span>
+            </div>
+
+            <div class="project-card experience-item" onclick="openGallery(['sih1.jpg','sih2.jpg','sih3.jpg'], 'SIH 2025 Host')">
+                <h3>Internal SIH 2025</h3>
+                <p><strong>Lead & Host</strong></p>
+                <p>Hosted the Internal Smart India Hackathon and managed the full event execution via Texplore Club.</p>
+                <span class="click-hint">Click for proof</span>
+            </div>
+
+            <div class="project-card experience-item" onclick="openGallery(['fresher1.jpg'], 'Mystique 2025 Operations')">
+                <h3>Mystique 2025</h3>
+                <p><strong>Organizing Team (Operations)</strong></p>
+                <p>Managed discipline and logistics for 500+ freshers, including operational coordinating of clubs.</p>
+                <span class="click-hint">Click for proof</span>
+            </div>
+
+            <div class="project-card experience-item" onclick="openGallery(['bhangra.jpg'], 'Bhangra Performance')">
+                <h3>Cultural: Bhangra</h3>
+                <p><strong>Stage Performer</strong></p>
+                <p>Represented the university in cultural events, performing Bhangra on the main stage.</p>
+                <span class="click-hint">Click for photo</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Technical Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Amazon Clone</h3>
+                <p>A responsive e-commerce clone built using HTML and CSS.</p>
+                <div class="project-links">
+                    <a href="https://jaszyw154.github.io/amazoneclone/" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>India Weather Web</h3>
+                <p>A web app showing live weather location data across Indian cities.</p>
+                <div class="project-links">
+                    <a href="https://jaszyw154.github.io/weatherweb/" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Travel Invoice System</h3>
+                <p>A JS-based generator for managing billing and invoices.</p>
+                <div class="project-links">
+                    <a href="https://github.com/jaszyw154" target="_blank">View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+    <h2>Get In Touch</h2>
+    <p>Email: <a href="mailto:jasleenwwalia@gmail.com" style="color: #00adb5; text-decoration: none;">jasleenwwalia@gmail.com</a></p>
+    <div class="socials">
+        <a href="https://github.com/jaszyw154" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/jasleen-kwalia154" target="_blank">LinkedIn</a>
+    </div>
+</footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-container">
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <img class="modal-content" id="modalImg">
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+        <div id="caption"></div>
+    </div>
+
+    <script src="resume.js"></script>
+</body>
+</html>
